@@ -1,0 +1,26 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+    padding: 70px;
+
+}
+@media screen and (max-width:1600px) {
+    .products-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:1385px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:1000px) {
+    .products-container{
+        grid-template-columns: 1fr;
+    }
+}
