@@ -6,9 +6,26 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 45px;
-    padding: 70px;
+    padding: 40px 100px 50px 100px;
 
 }
+.cart-container{
+    background: rgba(255, 153, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1600px) {
     .products-container{
         grid-template-columns: repeat(3, 1fr);
