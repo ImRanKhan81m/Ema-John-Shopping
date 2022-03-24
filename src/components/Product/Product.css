@@ -47,3 +47,32 @@
 .btn-card:hover{
     background-color: rgba(255, 166, 0, 0.671);
 }
+
+
+@media screen and (max-width:1560px) {
+    .product img{
+        width: 234px;
+        height: 200px;
+    }
+    .product{
+        width: 250px;
+        height: 410px;
+    }
+    .product-info{
+        margin:0  10px;
+    }
+
+}
+@media screen and (max-width:1190px) {
+    .product img{
+        width: 214px;
+        height: 180px;
+    }
+    .product{
+        width: 230px;
+        height: 410px;
+    }
+    .product-info{
+        margin:0  10px;
+    }
+}
