@@ -22,7 +22,7 @@ const ReviewItem = (props) => {
 
                 </div>
                 <div className="delete-container">
-                    <button>
+                    <button onClick={()=>handleRemoveProduct(product)}>
                         <FontAwesomeIcon className='dlt-icon' icon={faTrashAlt}></FontAwesomeIcon>
                     </button>
                 </div>
