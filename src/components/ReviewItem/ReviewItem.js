@@ -4,7 +4,8 @@ import React from 'react';
 import './ReviewItem.css';
 
 const ReviewItem = (props) => {
-    const { name, img, price, shipping, quantity } = props.product;
+    const {product, handleRemoveProduct} = props;
+    const { name, img, price, shipping, quantity } = product;
     return (
         <div className='review-item'>
             <div>
@@ -22,7 +23,7 @@ const ReviewItem = (props) => {
                 </div>
                 <div className="delete-container">
                     <button>
-                        <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='dlt-icon' icon={faTrashAlt}></FontAwesomeIcon>
                     </button>
                 </div>
             </div>

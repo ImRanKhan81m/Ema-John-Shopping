@@ -19,3 +19,20 @@
     display: flex;
     justify-content: space-between;
 }
+.delete-container{
+    display: flex;
+    align-items: center;
+}
+.delete-container button{
+    background: rgba(235, 87, 87, 0.3);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+
+}
+.dlt-icon{
+    color: rgba(235, 87, 87, 1);
+    ;
+    font-size: 27px;
+}
