@@ -35,8 +35,9 @@
     border: 1px solid #95A0A7;
     box-sizing: border-box;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 5px;
+    color: rgb(67, 66, 66);
 }
 .input-group input:focus{
     outline: none;

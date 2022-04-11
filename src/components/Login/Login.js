@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 
@@ -8,6 +8,8 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const location = useLocation()
+    const from = location?.state?.from?.pathname || '/'
     const [
         signInWithEmailAndPassword,
         user,
@@ -23,7 +25,7 @@ const Login = () => {
     }
 
     if(user){
-        navigate('/shop');
+        navigate(from, {replace:true});
     }
 
     const handleUserSignIn = event =>{
@@ -49,10 +51,10 @@ const Login = () => {
                     {
                         loading && <p>Loading...</p>
                     }
-                    <input className='form-submit' type="submit" value="Login" />
+                    <input className='form-submit' type="submit" value="Login" required/>
                 </form>
                 <p>
-                    New to Ema-John? <Link className='form-link' to='/signup'>Create an account</Link>
+                    New to Ema-John? <Link className='form-link' to='/signup'>Create an Account</Link>
                 </p>
             </div>
         </div>
